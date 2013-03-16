@@ -1,0 +1,27 @@
+<!--<div class="news-title-bg">Ќовости и событи€</div>
+          <div style="width:215px; margin-top:5px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="images/news-panel-top.gif" alt="" width="215" height="4"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="3" cellpadding="0">
+      <tr>
+        <td width="1" valign="top"><img src="images/n1.jpg" alt="" width="88" height="79" hspace="4"></td>
+        <td valign="top" class="sub"><p><strong>03 / 04 / 2009</strong><br>
+           акое-то очень важное событие произошло ...</p>
+          <p align="right"><a href="#">далее...</a></p></td>
+      </tr>
+    </table><table width="100%" border="0" cellspacing="3" cellpadding="0">
+      <tr>
+        <td width="1" valign="top"><img src="images/n1.jpg" alt="" width="88" height="79" hspace="4"></td>
+        <td valign="top" class="sub"><p><strong>23 / 02 / 2009</strong><br>
+           акое-то очень важное событие произошло ...</p>
+          <p align="right"><a href="#">далее...</a></p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><img src="images/news-panel-bottom.gif" alt="" width="215" height="3"></td>
+  </tr>
+</table>
+</div> -->

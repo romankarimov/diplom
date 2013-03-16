@@ -1,0 +1,158 @@
+<%@ Master Language="C#"  AutoEventWireup="true" CodeBehind="Default2.Master.cs" Inherits="turist.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.turist.com" >
+
+<head  id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <title>TuristPlus+</title>
+    <style media=all></style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.js"></script>
+    <script  type="text/javascript" src="jscript/scroll1.js"></script> 
+  
+<link href="css/style.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+ <form id="form" runat="server">
+    
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    
+    <td width="50"  bgcolor="#8d8d8d">&nbsp;</td> 
+    <td width="704" height="100%" valign="top"><table width="704" height="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="227" class="menu-bg"><div class="company_name">TuristPlus+</div>
+            <div class="company_name_shadow">TuristPlus+</div>
+              <img src="images/logo-bg-2.gif" alt="" width="227" height="100">
+            </td>
+            <td align ="left" width="100%">
+                <input id="Text1" type="text" onload="oJS.timeclient(this)" style="border:none" readonly="readonly" />
+            <div>
+            <asp:SiteMapPath ID="SiteMapPath1" runat = "server" /></div>
+            
+            </td>
+            <td align ="right" width="170px" > 
+                <div id="loginbox" > 
+                 <asp:LoginView ID="LoginView1" runat="server">
+                  <AnonymousTemplate>
+                   <asp:LoginName ID="LoginName1" runat="server" FormatString="Hello	{0}" meta:resourcekey="LoginName1Resource1" /><br />
+
+                   <asp:Login ID="Login" runat="server" Width="100%" FailureAction="RedirectToLoginPage" meta:resourcekey="LoginResource1">
+                      <LayoutTemplate>
+                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                               <td align="left" width="60px"><asp:Label runat="server" ID="lblUserName" AssociatedControlID="UserName" Text="Имя:" meta:resourcekey="lblUserNameResource1" /></td>
+                               <td><asp:TextBox id="UserName" runat="server" Width="95%" meta:resourcekey="UserNameResource2" /></td>
+                               <td width="5px" align="right">
+                                  <asp:RequiredFieldValidator ID="valRequireUserName" runat="server" SetFocusOnError="True"
+                                     ControlToValidate="UserName" Text="*" Validationgroups="Login" meta:resourcekey="valRequireUserNameResource1" />
+                               </td>
+                            </tr>
+                            <tr>
+                               <td align="left"><asp:Label runat="server" ID="lblPassword" AssociatedControlID="Password" Text="Пароль:" meta:resourcekey="lblPasswordResource1" /></td>
+                               <td><asp:TextBox ID="Password" runat="server" TextMode="Password"  Width="95%" meta:resourcekey="PasswordResource2" /></td>
+                               <td width="5px" align="right">
+                                  <asp:RequiredFieldValidator ID="valRequirePassword" runat="server" SetFocusOnError="True"
+                                     ControlToValidate="Password" Text="*" Validationgroups="Login" meta:resourcekey="valRequirePasswordResource1" />
+                               </td>
+                            </tr>
+                         </table>
+                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                               <td><asp:CheckBox ID="RememberMe" runat="server" Text="Запомнить" meta:resourcekey="RememberMeResource1"></asp:CheckBox></td>
+                               <td align="right">
+                                  <asp:ImageButton ID="Submit" runat="server" AlternateText="Login"
+                                     CommandName="Login" ImageUrl="~/images/go.gif" Validationgroups="Login" meta:resourcekey="SubmitResource1" />
+                               </td>
+                               <td width="5px" align="right">&nbsp;</td>
+                            </tr>
+                         </table>
+                         
+                      </LayoutTemplate>
+                   </asp:Login> 
+                  </AnonymousTemplate>
+                  <LoggedInTemplate>
+                   <div id="welcomebox">
+                      <asp:LoginName ID="LoginName1" runat="server" FormatString="Hello	{0}" meta:resourcekey="LoginName1Resource1" /><br />
+                      <small>
+                      <asp:HyperLink ID="lnkProfile" runat="server" Text="Профиль" NavigateUrl="~/EditProfile.aspx" meta:resourcekey="lnkProfileResource1" /><br /> 
+                      <asp:LoginStatus ID="LoginStatus1" Runat="server" meta:resourcekey="LoginStatus1Resource1" />
+                      </small>
+                   </div>
+                 </LoggedInTemplate>
+                 </asp:LoginView>
+                </div><!-- login box -->
+            </td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr >
+        <td>
+        <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="100%" valign="top"  class="l-bg">
+            <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td rowspan=2><img src="images/spacer.gif" alt="" width="1" height="13"></td>
+              </tr>
+              <tr style="vertical-align:top">
+                
+                <td  style="vertical-align:top" >
+                <tr><td valign=top >
+                <div height="200px" class="menu-bg"  >
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat =server />
+                 
+                
+                <asp:TreeView ID = "tmenu1" runat="server" DataSourceID="SiteMapDataSource1" CssClass="nmenu-bg"
+                           ImageSet="BulletedList"   ShowExpandCollapse="False" >
+                         
+                    <ParentNodeStyle Font-Bold="False" />
+                    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" 
+                        HorizontalPadding="0px" VerticalPadding="0px" />
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                        HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
+                    </asp:TreeView>
+                    </div> </td></tr>
+                    <tr >
+                    <td weight="100%" class="l-bg"></td></tr>
+                    </td> 
+                 
+              </tr>
+             
+            </table>
+            </td>
+            <td align = "center" valign="top">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder> 
+
+                &nbsp;</td>
+             </tr>
+      
+          </table></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="228" class="l-bg">&nbsp;</td>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="images/bot-line.gif" alt="" width="100%" height="1"></td>
+              </tr>
+              <tr>
+                
+                <td class="bottom_addr">&copy; TuristPlus+ <a href="mailto:admin@moonbears.ru">admin@moonbears.ru</a>  2012</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

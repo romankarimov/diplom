@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0BC17A0E-3FE0-44D4-9ABB-611DF068CBEA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>turist</RootNamespace>
+    <AssemblyName>turist</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationIcon>MSN.ICO</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PrecompileBeforePublish>false</PrecompileBeforePublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.JScript">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\index.aspx" />
+    <Content Include="App_Data\data.txt" />
+    <Content Include="docs\dogovor.aspx" />
+    <Content Include="docs\listb.aspx" />
+    <Content Include="docs\otchet.aspx" />
+    <Content Include="docs\schet.aspx" />
+    <Content Include="docs\dogovor_temp.aspx" />
+    <Content Include="docs\listb_temp.aspx" />
+    <Content Include="docs\schet_temp.aspx" />
+    <Content Include="images\about.jpg" />
+    <Content Include="images\accomodation.png" />
+    <Content Include="images\admin\icon-addfriend.png" />
+    <Content Include="images\admin\icon-analytics-piechart.png" />
+    <Content Include="images\admin\icon-avatar.png" />
+    <Content Include="images\admin\icon-businesscardalt.png" />
+    <Content Include="images\admin\icon-calendaralt-cronjobs.png" />
+    <Content Include="images\admin\icon-chat.png" />
+    <Content Include="images\admin\icon-controlpanel.png" />
+    <Content Include="images\admin\icon-csharp.png" />
+    <Content Include="images\admin\icon-database.png" />
+    <Content Include="images\admin\icon-emailalt.png" />
+    <Content Include="images\admin\icon-envelope.png" />
+    <Content Include="images\admin\icon-groups-friends.png" />
+    <Content Include="images\admin\icon-home.png" />
+    <Content Include="images\admin\icon-pause.png" />
+    <Content Include="images\admin\icon-play.png" />
+    <Content Include="images\admin\icon-rss.png" />
+    <Content Include="images\admin\icon-support.png" />
+    <Content Include="images\admin\icon-uptime.png" />
+    <Content Include="images\admin\icon-websitebuilder.png" />
+    <Content Include="images\archive.png" />
+    <Content Include="images\backmenu-bg.gif" />
+    <Content Include="images\birthday.png" />
+    <Content Include="images\bot-line.gif" />
+    <Content Include="images\btn-search.gif" />
+    <Content Include="images\c-sep.gif" />
+    <Content Include="images\calendar1.png" />
+    <Content Include="images\del.png" />
+    <Content Include="images\docs.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\email.png" />
+    <Content Include="images\enter.gif" />
+    <Content Include="images\female.png" />
+    <Content Include="images\fing.png" />
+    <Content Include="images\Go.gif" />
+    <Content Include="images\in.png" />
+    <Content Include="images\l-bg.gif" />
+    <Content Include="images\login-form-bg.gif" />
+    <Content Include="images\logo %281%29.png" />
+    <Content Include="images\logo-bg-2.gif" />
+    <Content Include="images\logo-bg.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logomain.png" />
+    <Content Include="images\logo_left.png" />
+    <Content Include="images\logo_left_adm.png" />
+    <Content Include="images\logo_right.png" />
+    <Content Include="images\logo_right_adm.png" />
+    <Content Include="images\m-bullet.gif" />
+    <Content Include="images\male.png" />
+    <Content Include="images\menu-bg.gif" />
+    <Content Include="images\n1.jpg" />
+    <Content Include="images\news-panel-bottom.gif" />
+    <Content Include="images\news-panel-top.gif" />
+    <Content Include="images\news-title-bg.gif" />
+    <Content Include="images\orglabel.png" />
+    <Content Include="images\out.png" />
+    <Content Include="images\p1.jpg" />
+    <Content Include="images\payment.png" />
+    <Content Include="images\settings.png" />
+    <Content Include="images\sms.png" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\stats.png" />
+    <Content Include="images\tourists.png" />
+    <Content Include="images\tours.png" />
+    <Content Include="images\upscroll.png" />
+    <Content Include="images\w1.gif" />
+    <Content Include="images\w2.gif" />
+    <Content Include="jscript\images\logo.png" />
+    <Content Include="jscript\images\logo_left.png" />
+    <Content Include="jscript\images\logo_left_adm.png" />
+    <Content Include="jscript\images\logo_right.png" />
+    <Content Include="jscript\images\logo_right_adm.png" />
+    <Content Include="jscript\dojo.js" />
+    <Content Include="jscript\jquery-1-4-2.js" />
+    <Content Include="jscript\jquery-1-7-1.min.js" />
+    <Content Include="jscript\jquery.browser.min.js" />
+    <Content Include="logout.aspx" />
+    <Content Include="provider\Panel.aspx" />
+    <Content Include="templates\serviceinorder.ascx" />
+    <Content Include="templates\temp.ascx" />
+    <Content Include="templates\order.ascx" />
+    <Content Include="templates\cntrlcatalog.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm13.aspx" />
+    <Content Include="neworderpeople.aspx" />
+    <Content Include="Admin\addsotr.aspx" />
+    <Content Include="edittur.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="addtypeturs.aspx" />
+    <Content Include="addturoperator.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Old_App_Code\Pay.cs" />
+    <Compile Include="provider\Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="provider\Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="provider\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="provider\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="provider\Panel.aspx.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="provider\Panel.aspx.designer.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\cntrlcatalog.ascx.cs">
+      <DependentUpon>cntrlcatalog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\cntrlcatalog.ascx.designer.cs">
+      <DependentUpon>cntrlcatalog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="unautho.Master.cs">
+      <DependentUpon>unautho.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="unautho.Master.designer.cs">
+      <DependentUpon>unautho.Master</DependentUpon>
+    </Compile>
+    <Compile Include="docs\dogovor.aspx.cs">
+      <DependentUpon>dogovor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docs\dogovor.aspx.designer.cs">
+      <DependentUpon>dogovor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="docs\listb.aspx.cs">
+      <DependentUpon>listb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docs\listb.aspx.designer.cs">
+      <DependentUpon>listb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="docs\otchet.aspx.cs">
+      <DependentUpon>otchet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docs\otchet.aspx.designer.cs">
+      <DependentUpon>otchet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="docs\schet.aspx.cs">
+      <DependentUpon>schet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docs\schet.aspx.designer.cs">
+      <DependentUpon>schet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="docs\dogovor_temp.aspx.cs">
+      <DependentUpon>dogovor_temp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docs\dogovor_temp.aspx.designer.cs">
+      <DependentUpon>dogovor_temp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="docs\listb_temp.aspx.cs">
+      <DependentUpon>listb_temp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docs\listb_temp.aspx.designer.cs">
+      <DependentUpon>listb_temp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="docs\schet_temp.aspx.cs">
+      <DependentUpon>schet_temp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="docs\schet_temp.aspx.designer.cs">
+      <DependentUpon>schet_temp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Old_App_Code\Class1.cs" />
+    <Compile Include="templates\serviceinorder.ascx.cs">
+      <DependentUpon>serviceinorder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\serviceinorder.ascx.designer.cs">
+      <DependentUpon>serviceinorder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\temp.ascx.cs">
+      <DependentUpon>temp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\temp.ascx.designer.cs">
+      <DependentUpon>temp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\order.ascx.cs">
+      <DependentUpon>order.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\order.ascx.designer.cs">
+      <DependentUpon>order.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm13.aspx.cs">
+      <DependentUpon>WebForm13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm13.aspx.designer.cs">
+      <DependentUpon>WebForm13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Old_App_Code\Globals.cs" />
+    <Compile Include="Old_App_Code\tpeople.cs" />
+    <Compile Include="Old_App_Code\torganization.cs" />
+    <Compile Include="Old_App_Code\member.cs" />
+    <Compile Include="Old_App_Code\t_tepl.cs" />
+    <Compile Include="Old_App_Code\t_gost.cs" />
+    <Compile Include="Old_App_Code\t_baza.cs" />
+    <Compile Include="Old_App_Code\t_zagr.cs" />
+    <Compile Include="Old_App_Code\Order.cs" />
+    <Compile Include="Old_App_Code\OrderDB.cs" />
+    <Compile Include="Old_App_Code\ServiceDB.cs" />
+    <Compile Include="Old_App_Code\MemberDB.cs" />
+    <Compile Include="Old_App_Code\OrganizationDB.cs" />
+    <Compile Include="Old_App_Code\PeopleDB.cs" />
+    <Compile Include="Old_App_Code\security.cs" />
+    <Compile Include="Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Old_App_Code\Docs.cs" />
+    <Compile Include="Old_App_Code\t_bazaDB.cs" />
+    <Compile Include="Example\Service.aspx.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\Service.aspx.designer.cs">
+      <DependentUpon>Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\CreateBD.aspx.cs">
+      <DependentUpon>CreateBD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\CreateBD.aspx.designer.cs">
+      <DependentUpon>CreateBD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default2.Master.cs">
+      <DependentUpon>Default2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default2.Master.designer.cs">
+      <DependentUpon>Default2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Example\People.aspx.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\People.aspx.designer.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\Organization.aspx.cs">
+      <DependentUpon>Organization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\Organization.aspx.designer.cs">
+      <DependentUpon>Organization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\Group.aspx.cs">
+      <DependentUpon>Group.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\Group.aspx.designer.cs">
+      <DependentUpon>Group.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\Tur.aspx.cs">
+      <DependentUpon>Tur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\Tur.aspx.designer.cs">
+      <DependentUpon>Tur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Other.master.cs">
+      <DependentUpon>Other.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Other.master.designer.cs">
+      <DependentUpon>Other.master</DependentUpon>
+    </Compile>
+    <Compile Include="neworder.aspx.cs">
+      <DependentUpon>neworder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="neworder.aspx.designer.cs">
+      <DependentUpon>neworder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Panel.aspx.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel.aspx.designer.cs">
+      <DependentUpon>Panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="templates\cntrltur.ascx.cs">
+      <DependentUpon>cntrltur.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\cntrltur.ascx.designer.cs">
+      <DependentUpon>cntrltur.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\msg.ascx.cs">
+      <DependentUpon>msg.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\msg.ascx.designer.cs">
+      <DependentUpon>msg.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="turists.aspx.cs">
+      <DependentUpon>turists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="turists.aspx.designer.cs">
+      <DependentUpon>turists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orders.aspx.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orders.aspx.designer.cs">
+      <DependentUpon>orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addturists.aspx.cs">
+      <DependentUpon>addturists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addturists.aspx.designer.cs">
+      <DependentUpon>addturists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="turs.aspx.cs">
+      <DependentUpon>turs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="turs.aspx.designer.cs">
+      <DependentUpon>turs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addturs.aspx.cs">
+      <DependentUpon>addturs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addturs.aspx.designer.cs">
+      <DependentUpon>addturs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="groupturists.aspx.cs">
+      <DependentUpon>groupturists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="groupturists.aspx.designer.cs">
+      <DependentUpon>groupturists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contacts.aspx.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contacts.aspx.designer.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="newservice.aspx.cs">
+      <DependentUpon>newservice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newservice.aspx.designer.cs">
+      <DependentUpon>newservice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\WebForm12.aspx.cs">
+      <DependentUpon>WebForm12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Example\WebForm12.aspx.designer.cs">
+      <DependentUpon>WebForm12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\cntrlturistp.ascx.cs">
+      <DependentUpon>cntrlturistp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\cntrlturistp.ascx.designer.cs">
+      <DependentUpon>cntrlturistp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\cntrlturisto.ascx.cs">
+      <DependentUpon>cntrlturisto.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\cntrlturisto.ascx.designer.cs">
+      <DependentUpon>cntrlturisto.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="templates\service.ascx.cs">
+      <DependentUpon>service.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates\service.ascx.designer.cs">
+      <DependentUpon>service.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="neworderpeople.aspx.cs">
+      <DependentUpon>neworderpeople.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="neworderpeople.aspx.designer.cs">
+      <DependentUpon>neworderpeople.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\addsotr.aspx.cs">
+      <DependentUpon>addsotr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\addsotr.aspx.designer.cs">
+      <DependentUpon>addsotr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edittur.aspx.cs">
+      <DependentUpon>edittur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edittur.aspx.designer.cs">
+      <DependentUpon>edittur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addtypeturs.aspx.cs">
+      <DependentUpon>addtypeturs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addtypeturs.aspx.designer.cs">
+      <DependentUpon>addtypeturs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addturoperator.aspx.cs">
+      <DependentUpon>addturoperator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addturoperator.aspx.designer.cs">
+      <DependentUpon>addturoperator.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default2.Master" />
+    <Content Include="Panel.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="turists.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\airwind.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Example\Airwind.html" />
+    <Content Include="Example\Service.aspx" />
+    <Content Include="Example\CreateBD.aspx" />
+    <Content Include="Example\People.aspx" />
+    <Content Include="Example\Organization.aspx" />
+    <Content Include="Example\Order.aspx" />
+    <Content Include="jscript\images\about.jpg" />
+    <Content Include="jscript\images\accomodation.png" />
+    <Content Include="jscript\images\archive.png" />
+    <Content Include="jscript\images\backmenu-bg.gif" />
+    <Content Include="jscript\images\bot-line.gif" />
+    <Content Include="jscript\images\btn-search.gif" />
+    <Content Include="jscript\images\c-sep.gif" />
+    <Content Include="jscript\images\calendar1.png" />
+    <Content Include="jscript\images\del.png" />
+    <Content Include="jscript\images\docs.png" />
+    <Content Include="jscript\images\edit.png" />
+    <Content Include="jscript\images\email.png" />
+    <Content Include="jscript\images\enter.gif" />
+    <Content Include="jscript\images\female.png" />
+    <Content Include="jscript\images\fing.png" />
+    <Content Include="jscript\images\Go.gif" />
+    <Content Include="jscript\images\l-bg.gif" />
+    <Content Include="jscript\images\login-form-bg.gif" />
+    <Content Include="jscript\images\logo-bg-2.gif" />
+    <Content Include="jscript\images\logo-bg.gif" />
+    <Content Include="jscript\images\m-bullet.gif" />
+    <Content Include="jscript\images\male.png" />
+    <Content Include="jscript\images\menu-bg.gif" />
+    <Content Include="jscript\images\n1.jpg" />
+    <Content Include="jscript\images\news-panel-bottom.gif" />
+    <Content Include="jscript\images\news-panel-top.gif" />
+    <Content Include="jscript\images\news-title-bg.gif" />
+    <Content Include="jscript\images\p1.jpg" />
+    <Content Include="jscript\images\payment.png" />
+    <Content Include="jscript\images\settings.png" />
+    <Content Include="jscript\images\sms.png" />
+    <Content Include="jscript\images\spacer.gif" />
+    <Content Include="jscript\images\stats.png" />
+    <Content Include="jscript\images\tourists.png" />
+    <Content Include="jscript\images\tours.png" />
+    <Content Include="jscript\images\w1.gif" />
+    <Content Include="jscript\images\w2.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="MSN.ICO" />
+    <Content Include="neworder.aspx" />
+    <Content Include="Web.sitemap" />
+    <Content Include="orders.aspx" />
+    <Content Include="addturists.aspx" />
+    <Content Include="turs.aspx" />
+    <Content Include="addturs.aspx" />
+    <Content Include="services.aspx" />
+    <Content Include="groupturists.aspx" />
+    <Content Include="contacts.aspx" />
+    <Content Include="newservice.aspx" />
+    <Content Include="Example\WebForm12.aspx" />
+    <Content Include="EditProfile.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Admin.Master" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="templates\cntrltur.ascx" />
+    <Content Include="templates\cntrlturistp.ascx">
+    </Content>
+    <Content Include="templates\cntrlturisto.ascx" />
+    <Content Include="Example\Group.aspx" />
+    <Content Include="Example\Tur.aspx" />
+    <Content Include="jscript\scroll1.js" />
+    <Content Include="jscript\transliteration.js" />
+    <Content Include="templates\service.ascx" />
+    <Content Include="templates\msg.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="unautho.Master" />
+    <Content Include="provider\Default.Master" />
+    <Content Include="provider\Main.Master" />
+    <Content Include="provider\Web.sitemap" />
+    <None Include="doctemplates\Doc1.dot" />
+    <Content Include="css\soria-1-7-2.css" />
+    <Content Include="css\style0_2.css" />
+    <Content Include="Main.Master" />
+    <Content Include="Default.Master" />
+    <Content Include="Other.master" />
+    <None Include="Properties\PublishProfiles\hosting.parking.ru.pubxml" />
+    <None Include="Properties\PublishProfiles\WWW.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="images\turoperator\" />
+    <Folder Include="images\turway\" />
+    <Folder Include="images\typetur\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>49503</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/turist</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

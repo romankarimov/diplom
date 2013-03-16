@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="turist.Site1" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Главная</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style media=all type="text/css">   .mainmenu {width: 100px;height: 100px;}</style>
+    <link href="css/soria-1-7-2.css" rel="stylesheet" type="text/css" />
+    <link href="css/style0_2.css" rel="stylesheet" type="text/css" />
+    <!-- Удалить! --><script type="text/javaScript" src="jscript/gtranslate/gtranslate.js"></script>
+    <script type="text/javascript" src="jscript/jquery-1-4-2.js"></script>
+    <script  type="text/javascript" src="jscript/scroll1.js"></script> 
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body style="text-align:center; width:100%">
+    <script runat="server">
+        
+    </script>
+    <div class="no-print">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+        <tr height="135">
+	    <td width="270" bgcolor="#3399cc"><img src="images/logo_left.png" width="270" height="135"></td>
+	    <td width="*" bgcolor="#3399cc" align="right"><img src="images/logo_right.png" width="718" height="135"></td>
+	    </tr>
+	</tbody>
+    </table>    
+
+
+    <div style="position:absolute; left:100px; top:50px;" align="right">
+    	<a href="index.aspx"><img src="images/logo.png" border="0" width="142" height="40"></a>
+    	<br><font color="#ffffff">Менеджер:&nbsp;<asp:Label ID="Manager" runat="server" Text="ФИО пользователя"></asp:Label><br><a href="logout.aspx" class="small_white">Выйти</a></font>
+    </div><!--
+        <div class="top_box">
+		<div class="top_box_b top_box_left"></div>
+		<div class="top_box_b top_box_mid">
+
+		</div>
+		<div class="top_box_b top_box_right"></div>
+        </div>
+             
+		<div class="top_box_b top_box_left"></div>
+		<div class="top_box_b top_box_mid"><a href="http://demo.moidokumenti.ru/index/reminders">Напоминания: 0</a></div>
+		<div class="top_box_b top_box_right"></div>
+
+		<div class="top_box_b top_box_left" style="margin-left:10px;"></div>
+				<div class="top_box_b top_box_mid"><a href="http://demo.moidokumenti.ru/sms/scheduled">АвтоSMS: Включить</a></div>
+		<div class="top_box_b top_box_right"></div>
+
+        		<div class="top_box_b top_box_left" style="margin-left:10px;"></div>
+		<div class="top_box_b top_box_mid"><a href="http://demo.moidokumenti.ru/index/spy">Шпионаж</a></div>
+		<div class="top_box_b top_box_right"></div>
+	    </div> -->
+
+
+    <asp:ContentPlaceHolder ID="MasterMain" runat="server"></asp:ContentPlaceHolder>
+    <footer style="padding:10px 10px 10px 10px; background-color:#EBEBEB; color:#555555;text-align:left">
+        Туризм 2012
+    </footer>
+</body>
+
+</html>

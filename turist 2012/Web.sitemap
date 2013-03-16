@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"  enableLocalization="true">
+  <siteMapNode>
+    <siteMapNode  url="~/Panel.aspx" title="Главная"  description="Главная страница">
+    <siteMapNode url="~/online.aspx" title="Бронирование"  description="Онлайн бронирование"/>
+    <siteMapNode url="~/orders.aspx"  title="Заказы"  description="Архив заказов" >
+      <siteMapNode url="~/neworder.aspx"  title="Новый заказ"  description="Оформление нового заказа" />
+    </siteMapNode>
+    <siteMapNode url="~/turists.aspx" title="Туристы"  description="Список туристов">
+      <siteMapNode url="~/addturists.aspx" title="Новый турист"  description="Добавление нового туриста" />
+      <siteMapNode url="~/groupturists.aspx" title="Группы туристов"  description="Просмотр групп туристов" />
+    </siteMapNode>
+    <siteMapNode url="~/turoperators.aspx" title="Туроператоры"  description="Список туров">
+      <siteMapNode url="~/addturoperator.aspx"  title="Добавить туроператора"  description="Добавление нового туроператора" />
+    </siteMapNode>
+    <siteMapNode url="~/turway.aspx" title="Турнаправления"  description="Список туров">
+      <siteMapNode url="~/addturs.aspx"  title="Добавить турнаправление"  description="Добавление нового турнаправления" />
+    </siteMapNode>
+    <siteMapNode url="~/grouptur.aspx" title="Группы туров"  description="Добавление группы турнаправлений для сортировки" />
+    <siteMapNode url="~/typetur.aspx" title="Типы туров"  description="Список туров">  
+      <siteMapNode url="~/addtypeturs.aspx"  title="Добавить тип тура"  description="Добавление нового типа тура" />
+    </siteMapNode>
+    <siteMapNode url="~/services.aspx" title="Услуги"  description="Список услуг">
+      <siteMapNode url="~/newservice.aspx"  title="Новая услуга"  description="Добавление новой услуги" />
+    </siteMapNode>
+    <siteMapNode url="~/Admin/index.aspx" title="Администрирование"  description="Панель администрирования" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

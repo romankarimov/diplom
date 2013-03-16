@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="turist.Site1" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Главная</title>
+    <style media=all type="text/css">   .mainmenu {width: 100px;height: 100px;}</style>
+    <link href="../css/soria-1-7-2.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style0_2.css" rel="stylesheet" type="text/css" />
+    <!-- Удалить! --><script type="text/javaScript" src="../jscript/gtranslate/gtranslate.js"></script>
+    <script type="text/javascript" src="../jscript/jquery-1-4-2.js"></script>
+    <script  type="text/javascript" src="../jscript/scroll1.js"></script> 
+    <link href="../css/style.css" rel="stylesheet" type="text/css" >
+</head>
+<body style="text-align:center; width:100%">
+    <div class="no-print">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tbody>
+        <tr height="135">
+	    <td width="270" bgcolor="#3399cc"><img src="../images/logo_left.png" width="270" height="135"></td>
+	    <td width="*" bgcolor="#3399cc" align="right"><img src="../images/logo_right.png" width="718" height="135"></td>
+	    </tr>
+	</tbody>
+    </table>    
+
+
+    <div style="position:absolute; left:100px; top:50px;" align="right">
+    	<a href="index.aspx"><img src="../images/logo.png" border="0" width="142" height="40"></a>
+    	<br><font color="#ffffff">Менеджер:&nbsp;<asp:Label ID="Manager" runat="server" Text="Иванова Л.А."></asp:Label><br><a href="logout.aspx" class="small_white">Выйти</a></font>
+    </div>
+        
+             
+
+
+    <asp:ContentPlaceHolder ID="MasterMain" runat="server"></asp:ContentPlaceHolder>
+    <footer style="padding:10px 10px 10px 10px; background-color:#EBEBEB; color:#555555;text-align:left">
+        Туризм 2012
+    </footer>
+</body>
+
+</html>

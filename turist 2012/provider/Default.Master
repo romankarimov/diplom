@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/provider/Main.Master" AutoEventWireup="true" CodeBehind="Default.Master.cs" Inherits="turist.Other" %>
+
+<asp:Content ContentPlaceHolderID="MasterMain" runat="server">
+    <script runat="server">
+        
+    </script>    
+    <form id="form1" runat="server" >
+        <div>
+            <table width="100%">
+            <tr style="vertical-align:top">
+            <td style="width:10%"></td>
+            <td style="width:20%"><div style="vertical-align:top;text-align:left;width:100%;height:100%" >
+                <asp:TreeView ID="TreeView1" runat="server" ForeColor="#09348a" ShowExpandCollapse="false" DataSourceID="Providermapsource"></asp:TreeView>
+                  <asp:SiteMapDataSource runat ="server" ID="Providermapsource" SiteMapProvider="provider" />               </div>
+
+            </td>
+            <td> 
+            <asp:ScriptManager ID="ScriptManager1" runat="server" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            </td>
+            <td style="width:10%"></td>
+            </tr>
+            </table>
+        </div>
+    </form>
+
+</asp:Content>

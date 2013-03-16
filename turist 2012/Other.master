@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Other.master.cs" Inherits="turist.NestedMasterPage1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MasterMain" runat="server">
+<form id="form1" runat="server" >
+    <div>
+        <table width="100%">
+        <tr>
+        <td style="width:10%"></td>
+        <td> 
+        <asp:ScriptManager ID="ScriptManager1" runat="server" /><div style="text-align:center;">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder></div>
+        </td>
+        <td style="width:20%" >
+        <asp:ContentPlaceHolder ID="MassageList" runat="server">
+        </asp:ContentPlaceHolder>
+        </td>
+        <td style="width:10%"></td>
+        </tr>
+        </table>
+    </div>
+</form>
+
+</asp:Content>

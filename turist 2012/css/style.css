@@ -1,0 +1,46 @@
+body {margin:0;padding:0;background:#ffffff;}
+p,td { font-family:Arial, Helvetica, sans-serif; margin-top: 0px;}
+a{color: #e93636;text-decoration: underline;}
+a:hover{color: #707EBF;text-decoration: underline;}
+a.hidden {text-decoration: none;color: #000000;cursor:default;}
+td.menu {
+    vertical-align: top;
+    text-align: left;
+}
+form {margin:0;padding:0;}
+ul {margin-left:20px;margin-top:0px;padding:1px;list-style-type: square;line-height: 16px;}
+h1 {font-size: 14px;font-weight: bold;color: #6c6c6c;margin: 0px;padding-left: 10px;text-transform: uppercase;padding-bottom: 5px;padding-top: 10px;}
+.l-bg {background-image: url(../images/l-bg.gif);background-repeat: repeat-y; vertical-align:top;}
+.bottom_addr {font-size: 11px;color: #000000;padding-top: 2px;padding-right: 10px;padding-bottom: 8px;padding-left: 10px;}
+.bottom_addr a {text-decoration: none;}
+.bottom_addr a:hover {text-decoration: underline;}
+.bottom_menu {color: #000000;text-align: left;padding-top: 6px;padding-bottom: 1px;font-size: 11px;padding-right: 10px;padding-left: 10px;}
+.bottom_menu a {color: #41528D;text-decoration: underline;}
+.bottom_menu a:hover {	color: #929AD8;text-decoration: underline;}
+.menu {color: #FFFFFF;background-image: url(../images/m-bullet.gif);background-repeat: no-repeat;font-weight: bold;padding-right: 10px;	padding-left: 44px;	white-space: nowrap;background-position: 21px;font-size: 12px;padding-top: 4px;padding-bottom: 4px;}
+.menu-bg {background-image: url(../images/menu-bg.gif);	background-repeat: repeat-y;vertical-align:top;}
+.nmenu-bg {background-image: url(../images/newmenu-bg.gif);	background-repeat: repeat-y;}
+.menu a{text-decoration: underline;	color: #FFFFFF;}
+.menu a:hover {	color: #C2C7EB;text-decoration: underline;}
+.sub {color: #333333;text-transform: none;vertical-align: top;padding-right: 5px;font-size: 11px;}
+.sub p{	color: #333333;text-transform: none;vertical-align: top;padding-top: 0px;padding-right: 1px;font-size: 11px;padding-bottom: 2px;margin: 0px;}
+.site_search {font-family: Arial, Helvetica, sans-serif;font-size: 10px;color: #B1B1B1;padding-right: 3px;white-space: nowrap;}
+.body_txt {color: #6C6C6C;text-align: justify;vertical-align: top;font-size: 11px;padding: 6px 10px 10px 10px;}
+.news-title-bg {background-image: url(../images/news-title-bg.gif);background-repeat: no-repeat;font-size: 12px;font-weight: bold;color: #C71516;text-align: left;padding-top: 4px;padding-left: 8px;height: 23px;position: relative;}
+.company_name {font-size: 20px;font-weight: normal;text-transform: none;color: #FFFFFF;position: absolute;font-family: Tahoma, Arial;	top: 37px;margin-left: 44px;z-index: 2;}
+.company_name_shadow {	font-size: 20px;font-weight: normal;text-transform: none;color: #000000;position: absolute;font-family: Tahoma, Arial;top: 38px;margin-left: 45px;z-index: 1;}
+.login_form {background-image: url(../images/login-form-bg.gif);background-repeat: repeat-x;height: 20px;width: 138px;font-size: 11px;padding-top: 3px;padding-left: 1px;border: 1px solid #c0c0c0;}
+div.wind {position: absolute;width:320px;left: 35%;top: 100px;border:solid #664302 4px;display: none;z-index: 10;overflow: hidden;background-color:#feeccb ;color:#141414;text-align:center;padding:10px;}
+.scroll-to-top-button{background: #666 url(../images/upscroll.png) center center no-repeat;
+            width: 32px;
+            height: 32px;
+            color: #fff;
+            font-family: verdana;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -o-border-radius: 5px;
+            cursor: pointer;
+            padding: 15px;
+            margin: 20px;
+        }

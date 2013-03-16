@@ -1,0 +1,2 @@
+﻿------ Перестроение всех файлов начато: проект: turist, Конфигурация: Debug Any CPU ------
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets(1988,5): warning MSB3304: Не удалось определить зависимости ссылок COM "VBIDE". Ошибка при загрузке библиотеки. (Исключение из HRESULT: 0x80029C4A (TYPE_E_CANTLOADLIBRARY))
